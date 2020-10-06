@@ -10,8 +10,8 @@ WORKDIR /usr/src/wordpress/wp-content/plugins
 
 RUN rm -rf /usr/src/wordpress/wp-content/plugins/*
 
-ADD https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.2.4.1.zip .
-ADD https://downloads.wordpress.org/plugin/wp-mail-smtp.2.2.1.zip .
+ADD https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.2.4.4.zip .
+ADD https://downloads.wordpress.org/plugin/wp-mail-smtp.2.4.0.zip .
 
 RUN for i in *.zip; do unzip -o $i; rm $i; done
 
